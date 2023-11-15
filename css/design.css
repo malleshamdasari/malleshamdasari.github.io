@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.231;
+}
+
+#header {
+  width: 100%;
+}
+
+#header:before {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #759CBA;
+  content: "";
+}
+
+#header_proj {
+  display: inline-block;
+  width: 100%;
+  background: #759CBA;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#header_proj > * {
+  vertical-align: top;
+}
+
+#header_box {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  overflow: auto;
+}
+
+#header_box > * {
+  vertical-align: top;
+}
+
+#header_box_pic {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+#header_box_icon {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#header_box_info {
+  display: inline-block;
+}
+
+#body_box {
+  max-width: 650px;
+  text-align: left;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+.f_left {
+  float: left;
+}
+
+.f_right {
+  float: right;
+}
+
+.left_indent {
+  padding-left: 15px;
+}
+
+.annleft_indent {
+  padding-left: 0px;
+}
+
+.right_indent {
+  padding-left: 0px;
+}
+
+hr {
+  clear: both;
+  background-color: #E0E0E0;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+  color: #000;
+  margin-top: 8px;
+  margin-bottom: -8px;
+}
+
+h2 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+p.announcement {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background-color: #C5D6DE;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+p.caption {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #555;
+  padding-left: 10%; 
+  padding-right: 10%;
+  text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #111111;
+  font-weight: bold;
+}
+
+a.black:link, a.black:visited, a.black:hover, a.black:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+a.biglink:link, a.biglink:visited, a.biglink:hover, a.biglink:active {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Paper, Slides, and Project Buttons for Publications */
+
+a.pubres:link, a.pubres:visited, a.pubres:hover, a.pubres:active {
+  border-radius: 4px; 
+  -moz-border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #343434;
+  padding-left: 26px;
+  padding-right: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-bottom: 8px;
+}
+
+a.video:link, a.video:visited, a.video:hover, a.video:active {
+  border: 2px solid #FFFFFF;
+  background: #FF1111 url("../files/video.png") no-repeat left center; 
+  background-position: 4px 4px;
+}
+
+a.video:hover, a.video:active {
+  border: 1px solid #343434;
+}
+
+a.paper:link, a.paper:visited, a.paper:hover, a.paper:active {
+  border: 2px solid #FFFFFF;
+  background: #2DA0E2 url("../files/paper.png") no-repeat left center; 
+  background-position: 4px 4px;
+}
+
+a.paper:hover, a.paper:active {
+  border: 1px solid #343434;
+}
+
+a.slides:link, a.slides:visited, a.slides:hover, a.slides:active {
+  border: 1px solid #FFFFFF;
+  background: #F7862A url("../files/slides.png") no-repeat left center;
+  background-position: 4px 4px;
+}
+
+a.slides:hover, a.slides:active {
+  border: 1px solid #343434;
+}
+
+a.code:link, a.code:visited, a.code:hover, a.code:active {
+  border: 1px solid #FFFFFF;
+  background: #8FC93A url("../files/code.png") no-repeat left center;
+  background-position: 4px 4px;
+}
+
+a.code:hover, a.code:active {
+  border: 1px solid #343434;
+}
+
+a.data:link, a.data:visited, a.data:hover, a.data:active {
+  border: 1px solid #FFFFFF;
+  background: #8FC93A url("../files/data.png") no-repeat left center;
+  background-position: 4px 4px;
+}
+
+a.data:hover, a.data:active {
+  border: 1px solid #343434;
+}
+
+/* Main Page -- Selected vs. All Publications */
+
+#show_all_pubs {
+}
+
+#hide_all_pubs {
+  display: none;
+}
+
+.hidden_pub {
+  display: none;
+}
+
+/* Main Page -- Project Descriptions */
+
+.code {
+  display: block;
+}
+
+.code > * {
+  vertical-align: top;
+}
+
+.code_icon {
+  float: left;
+  padding-right: 15px;
+}
+
+.code_info {
+  overflow: hidden;
+}
+
+/* Project Page -- Paper Abstracts */
+
+.abstract {
+  display: none;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 13px;
+}
+
+a.show_abstract {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #545454;
+  padding-left: 16px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  background: transparent url("../images/arrow_down.png") no-repeat left;
+  vertical-align: top;
+}
+
+a.hide_abstract {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #545454;
+  padding-left: 16px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  background: transparent url("../images/arrow_up.png") no-repeat left;
+}
+
+a.show_abstract:hover, a.hide_abstract:hover {
+}
+
+/* Media -- Put picture above info and center both on small screens */
+@media only screen and (max-width: 675px),
+       only screen and (max-device-width: 675px) {
+  #header_box_pic {
+    display: block;
+    margin: auto;
+    padding-right: 0px;
+    margin-bottom: 25px;
+  }
+  
+  #header_box_info {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  #body_box {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+
