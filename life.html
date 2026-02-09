@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life — Mallesh Dasari</title>
+
+<style>
+
+:root{
+  --bg:#fcfcfc;
+  --panel:#ffffff;
+  --text:#111;
+  --muted:#555;
+  --border:#eeeeee;
+  --accent:#3a4a66;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.85;
+}
+
+.wrapper{
+  padding:40px 20px;
+}
+
+.container{
+  width:min(760px,100%);
+  margin:0 auto;
+}
+
+/* Top navigation */
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:28px;
+}
+
+.brand{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:600;
+}
+
+.nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.nav a{
+  text-decoration:none;
+  color:var(--accent);
+  font-size:14px;
+  border-bottom:1px solid transparent;
+}
+
+.nav a:hover{
+  border-color:var(--accent);
+}
+
+/* Panel */
+
+.panel{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:clamp(26px,4vw,46px);
+}
+
+/* Typography */
+
+h1{
+  margin-top:0;
+  font-size:clamp(28px,3vw,36px);
+  letter-spacing:-0.4px;
+}
+
+p{
+  margin:0 0 20px;
+  color:#222;
+}
+
+.meta{
+  color:var(--muted);
+  margin-bottom:28px;
+}
+
+.gallery{
+  margin-top:50px;
+  display:flex;
+  flex-direction:column;
+  gap:36px;
+}
+
+.gallery figure{
+  margin:0;
+}
+
+.gallery img{
+  width:100%;
+  max-width:680px;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+.gallery figcaption{
+  margin-top:10px;
+  font-size:14px;
+  color:#666;
+  line-height:1.6;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="container">
+
+<div class="topbar">
+  <a href="/" class="brand">Mallesh Dasari</a>
+      <nav class="nav" aria-label="Site">
+        <a href="index.html">Home</a>
+        <a href="work.html" target="_blank">Work</a>
+        <a href="notes.html" target="_blank">Notes</a>
+        <a href="life.html" target="_blank">Life</a>
+        <a href="https://sinrg.org" target="_blank" rel="noreferrer">Lab</a>
+      </nav>
+
+</div>
+
+<main class="panel">
+
+<h1>Life</h1>
+
+<p>
+I was born and raised in <a href="https://www.onefivenine.com/india/villages/Karimnagar/Mallial/Ramannapet" target="_blank">Ramannapet</a>, a remote village in south-central India with a population of roughly two thousand people. Telugu is the spoken language. It is the kind of place where nearly everyone knows one another. It has a thick culture of its own that the world has no idea, which I hope to share to the world one day.
+</p>
+
+<p>
+Growing up, the village functioned almost as a self-sustained ecosystem. Most families depended on farming. Local elders helped resolve conflicts, with almost government involvment. It was almost a barter system if I remember. Travel often meant ox carts along dusty roads, a striking contrast to the automobiles that now pass through the same landscape. It is eye-opening to witness such transformation of the place in just two decade timeline. 
+</p>
+
+<p>
+I spend much of my childhood on our farm fields. Those years shaped my sense of patience, perspective, and appreciation for simple things. It is a life I would never trade.
+</p>
+
+<p>
+Education quietly transformed my trajectory. I was fortunate to attend a government school in the village, and later continued my studies in a nearby town when higher schooling was not available locally. College took me to Osmania University in Hyderabad, an experience that widened my world in ways I could not have anticipated.
+</p>
+
+<p>
+Afterward, I crossed oceans to live a life I couldn't in India, and also to pursue graduate studies in the United States. What I found was a country that welcomed me with generosity and opportunity. Within months, it began to feel like home. It was especially because I lived in a rural Missouri for the first six months, so I had a lot of resemblence with rural India which made me feel home.
+</p>
+
+<p>
+Looking back, I see that much of my life has been shaped by the mentorship of people who, often without obligation, chose to invest their time and belief in me. At the time, I rarely paused to recognize the extent of their influence. With distance, I understand how extraordinary such guidance can be. I hope, in my own way, to offer that same encouragement to others.
+</p>
+
+<p>
+As my professional work continues, I find myself drawn not only to scholarly pursuits but also to broader questions related to humanity such as the gaps between rural and urban perspectives, disparities in education, economic inequality, human dignity, and opportunity. These concerns may be wide-ranging, but I have come to believe that human lives are not meant to be one-dimensional. Depth matters, but so does breadth, and sometimes the most meaningful contributions emerge at the intersections.
+</p>
+
+<p>
+In spare time, I spend time reading, writing, and reflecting on how our world came to be, and how we might carry it forward with greater thoughtfulness. I practice yoga and calisthenics, both reminders of discipline and balance. I am also currently learning (although at very slow pace) two foreign languages: Russian and Hindi, drawn by the ways language opens new doors into culture and understanding.
+</p>
+
+
+<div class="gallery">
+
+  <figure>
+    <img src="pics/farms.png" alt="Farm fields in Ramannapet">
+    <figcaption>Our farm fields, where much of my childhood unfolded.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="pics/bathukamma.png" alt="Bathukamma festival">
+    <figcaption>Bathukamma, a floral festival that reflects the cultural rhythm of the region. Notice the two women: their attire and jewelry reflect a fashion tradition that is both distinctive and quietly beautiful.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="pics/localgod.png" alt="Local temple deity">
+    <figcaption>Many households maintain a dedicated room for worship, adorning it with flowers and careful decoration each December as they welcome their community with food and hospitality.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="pics/well.png" alt="Village wells">
+    <figcaption>Almost every single house maintains their own well.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="pics/visionpro.png" alt="Technology demonstration">
+    <figcaption>In march of 2025, I showed off the emerging XR technology to locals who shaped my childhood.</figcaption>
+  </figure>
+
+</div>
+
+
+
+</main>
+
+<div class="footer">
+© 2026 Mallesh Dasari
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+

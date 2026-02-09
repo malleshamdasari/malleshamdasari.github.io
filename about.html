@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Mallesh Dasari</title>
+
+<style>
+:root{
+  --bg:#fcfcfc;
+  --panel:#ffffff;
+  --text:#111;
+  --muted:#555;
+  --accent:#3a4a66;
+  --border:#eeeeee;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.7;
+}
+
+.wrapper{
+  min-height:100svh;
+  padding:32px 18px 60px;
+}
+
+.container{
+  width:min(820px, 100%);
+  margin:0 auto;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:10px 6px 18px;
+}
+
+.brand{
+  text-decoration:none;
+  color:var(--text);
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.brand .name{
+  font-size:16px;
+  font-weight:600;
+  letter-spacing:-0.2px;
+}
+
+.brand .sub{
+  font-size:13px;
+  color:#777;
+}
+
+.nav{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+
+.nav a{
+  text-decoration:none;
+  color:var(--accent);
+  font-size:14px;
+  padding:4px 2px;
+  border-bottom:1px solid transparent;
+  transition:border-color .2s ease;
+}
+
+.nav a:hover{
+  border-color:var(--accent);
+}
+
+.panel{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:clamp(22px, 4vw, 42px);
+}
+
+h1{
+  margin:0 0 10px;
+  font-size:clamp(28px, 3.2vw, 40px);
+  font-weight:600;
+  letter-spacing:-0.5px;
+  line-height:1.15;
+}
+
+.kicker{
+  margin:0 0 24px;
+  color:var(--muted);
+  font-size:clamp(15px, 1.6vw, 18px);
+  max-width:65ch;
+}
+
+hr{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:22px 0;
+}
+
+h2{
+  margin:0 0 10px;
+  font-size:clamp(16px, 1.7vw, 18px);
+  font-weight:600;
+  letter-spacing:-0.2px;
+}
+
+p{
+  margin:0 0 14px;
+  color:#222;
+}
+
+.small{
+  color:#777;
+  font-size:13px;
+}
+
+blockquote{
+  margin:18px 0 6px;
+  padding:14px 16px;
+  border-left:3px solid #d7dde7;
+  background:#fafafa;
+  border-radius:10px;
+  color:#333;
+}
+
+.links{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.links a{
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  padding-bottom:2px;
+}
+
+.links a:hover{ border-color:var(--accent); }
+
+.footer{
+  margin-top:18px;
+  padding:14px 6px 0;
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+  color:#888;
+  font-size:13px;
+}
+
+@media (max-width:520px){
+  .topbar{ flex-direction:column; align-items:flex-start; }
+  .nav{ justify-content:flex-start; gap:14px; }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="container">
+
+    <div class="topbar">
+      <a class="brand" href="/">
+        <div class="name">Mallesh Dasari</div>
+        <div class="sub">About</div>
+      </a>
+
+      <nav class="nav" aria-label="Site">
+        <a href="index.html">Home</a>
+        <a href="work.html" target="_blank">Work</a>
+        <a href="notes.html" target="_blank">Notes</a>
+        <a href="life.html" target="_blank">Life</a>
+        <a href="https://sinrg.org" target="_blank" rel="noreferrer">Lab</a>
+      </nav>
+    </div>
+
+    <main class="panel">
+      <h1>About</h1>
+      <p>
+        I grew up in India and later built a life in the United States.
+        Along the way, education and mentorship played a huge role in shaping my trajectory.
+        I try to pay that forward, with students, collaborators, and communities.
+      </p>
+
+      <p>
+        I’m drawn to understanding how the world changes and how people experience those changes.
+        I like questions that sit between technical reality and human systems.
+      </p>
+
+      <p>
+        I’m happiest when I’m active, learning, contributing, and revising my beliefs.
+      </p>
+
+      <p class="small">
+        If you’re looking for publications, formal bio, or lab details, use the Lab / Work pages.
+      </p>
+
+      <div class="links" aria-label="Links">
+        <a href="/work">Work →</a>
+        <a href="/notes">Notes →</a>
+        <a href="/life">Life →</a>
+        <a href="https://sinrg.org" target="_blank" rel="noreferrer">Lab →</a>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div>© 2026 Mallesh Dasari</div>
+      <div class="small">Simple HTML • responsive</div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
+
