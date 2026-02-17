@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <title>Mallesh Dasari</title>
 
@@ -87,6 +88,25 @@ h1{
   border-color:var(--accent);
 }
 
+.social{
+  margin-top:26px;
+  display:flex;
+  justify-content:center;
+  gap:22px;
+}
+
+.social a{
+  color:var(--muted);
+  font-size:40px;
+  transition:color .2s ease, transform .2s ease;
+}
+
+.social a:hover{
+  color:var(--accent);
+  transform:translateY(-2px);
+}
+
+
 footer{
   margin-top:36px;
   font-size:13px;
@@ -126,6 +146,22 @@ footer{
       <a href="life.html" target="_blank">Life</a>
       <a href="https://sinrg.org" target="_blank">Lab</a>
     </nav>
+
+    <div class="social">
+      <a href="https://scholar.google.com/citations?hl=en&user=Exq-T-gAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" aria-label="Google Scholar">
+        <i class="fa-solid fa-graduation-cap"></i>
+      </a>
+      <a href="https://github.com/SINRG-Lab" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/malleshdasari" target="_blank" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/prof_dasari" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
 
     <footer>
       © 2026 Mallesh Dasari
