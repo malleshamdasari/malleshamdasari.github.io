@@ -19,40 +19,36 @@
 
 *{ box-sizing:border-box; }
 
-html{
-  scroll-behavior:smooth;
-}
-
 body{
   margin:0;
   background:var(--bg);
   color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.85;
 }
 
 .wrapper{
-  min-height:100svh;
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
   padding:40px 20px;
 }
 
-.content{
-  width:min(860px,100%);
-  background:var(--panel);
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:clamp(28px,4vw,44px);
+.container{
+  width:min(760px,100%);
+  margin:0 auto;
 }
+
+/* Top navigation */
 
 .topbar{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
+  align-items:center;
   margin-bottom:28px;
+}
+
+.brand{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:600;
 }
 
 .nav{
@@ -64,34 +60,13 @@ body{
 .nav a{
   text-decoration:none;
   color:var(--accent);
-  font-size:18px;
-  padding:4px 2px;
+  font-size:14px;
   border-bottom:1px solid transparent;
-  transition:border-color .2s ease;
 }
 
-.nav a:hover,
-.nav a.active{
+.nav a:hover{
   border-color:var(--accent);
 }
-
-p{
-  margin:0 0 20px;
-  font-size:17px;
-  line-height:1.8;
-  color:var(--text);
-}
-
-footer{
-  margin-top:34px;
-  padding-top:22px;
-  border-top:1px solid var(--border);
-  font-size:13px;
-  color:#888;
-  text-align:center;
-  letter-spacing:0.02em;
-}
-
 
 /* Panel */
 
@@ -133,6 +108,7 @@ p{
 
 .gallery img{
   width:100%;
+  max-width:680px;
   height:auto;
   display:block;
   border-radius:12px;
@@ -161,19 +137,21 @@ p{
 
 <body>
 
-<main class="wrapper">
-  <section class="content">
+<div class="wrapper">
+<div class="container">
 
-    <div class="topbar">
-      <h1></h1>
-
-      <nav class="nav">
+<div class="topbar">
+  <a href="/" class="brand"> </a>
+      <nav class="nav" aria-label="Site">
         <a href="index.html">Home</a>
         <a href="work.html">Work</a>
-        <a href="life.html" class="active">Life</a>
+        <a href="life.html">Life</a>
         <a href="notes.html">Notes</a>
       </nav>
-    </div>
+
+</div>
+
+<main class="panel">
 
 <h1> </h1>
 
@@ -205,7 +183,7 @@ I find myself drawn not only to scholarly pursuits but also to broader questions
 </p>
 
 <p>
-In spare time, I read nonfiction, write small notes, and reflect on how our world came to be, and how we might carry it forward. I practice calisthenics as an amateur. I am also currently learning (although at very slow pace) two foreign languages: Russian and Hindi.
+In spare time, I spend time reading nonfiction, writing small notes, and reflecting on how our world came to be, and how we might carry it forward with greater thoughtfulness. I practice calisthenics as an amateur. I am also currently learning (although at very slow pace) two foreign languages: Russian and Hindi.
 </p>
 
 <hr>
@@ -225,11 +203,6 @@ Glimpses of the region’s deeply rooted cultural life.
   </figure>
 
   <figure>
-    <img src="pics/muharram.png" alt="Muharram">
-    <figcaption>A local Muharram tradition featuring participants dressed as tigers. An islamic festival celebrated by muslims and hindus together.</figcaption>
-  </figure>
-
-  <figure>
     <img src="pics/localgod.png" alt="Local temple deity">
     <figcaption>Many households maintain a dedicated room for worship, adorning it with flowers and careful decoration each December as they welcome their community with food and hospitality.</figcaption>
   </figure>
@@ -237,6 +210,11 @@ Glimpses of the region’s deeply rooted cultural life.
   <figure>
     <img src="pics/well.png" alt="Village wells">
     <figcaption>A water well in our home. Almost every single house maintains their own well.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="pics/muharram.png" alt="Muharram">
+    <figcaption>A local Muharram tradition featuring participants dressed as tigers. An islamic festival celebrated by muslims and hindus together.</figcaption>
   </figure>
 
   <figure>
@@ -252,13 +230,16 @@ Glimpses of the region’s deeply rooted cultural life.
 
 </div>
 
-    <footer>
-      © 2026 Mallesh Dasari
-    </footer>
 
-  </section>
 
 </main>
+
+<div class="footer">
+© 2026 Mallesh Dasari
+</div>
+
+</div>
+</div>
 
 </body>
 </html>

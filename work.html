@@ -269,6 +269,8 @@ footer{
   border-top:1px solid var(--border);
   font-size:13px;
   color:#888;
+  text-align:center;
+  letter-spacing:0.02em;
 }
 
 a.inline{
@@ -332,6 +334,20 @@ a.inline:hover{
   text-decoration:underline;
 }
 
+.hero-image {
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
 @media(max-width:700px){
   .wrapper{
     padding:20px 14px;
@@ -380,20 +396,25 @@ a.inline:hover{
   <section class="content">
 
     <div class="topbar">
-      <h1>Work</h1>
+      <h1> </h1>
 
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="work.html" class="active">Work</a>
-        <a href="notes.html">Notes</a>
         <a href="life.html">Life</a>
-        <a href="https://sinrg.org" target="_blank">Lab</a>
+        <a href="notes.html">Notes</a>
       </nav>
     </div>
 
     <section class="section">
+
+<div class="hero-image">
+  <img src="pics/nu.jpg" alt="Northeastern University campus">
+</div>
+
+
       <p>
-        I am an Assistant Professor in the Department of Electrical and Computer Engineering at Northeastern University. I direct the <a class="inline" href="https://sinrg.org" target="_blank">Spatial Intelligence Research Group (SINRG)</a>. I am interested in advancing research in spatial intelligence, which spans several interconnected areas of computing and human-centered technologies:
+        I am an Assistant Professor in the Department of Electrical and Computer Engineering at Northeastern University. I direct the <a class="inline" href="https://sinrg.org" target="_blank">Spatial Intelligence Research Group (SINRG)</a>. Before joining Northeastern, I received my Ph.D. in Computer Science from Stony Brook University and worked as a postdoctoral researcher at Carnegie Mellon University. My research advances spatial intelligence, which spans several interconnected areas of computing and human-centered technologies:
 </p>
 
 <ul class="research-list">
@@ -470,43 +491,7 @@ Using immersive technologies to transform education, training, and skill develop
         IEEE VR 2026: Conference on Virtual Reality and 3D User Interfaces; selected to appear in IEEE Transactions on Visualization and Computer Graphics (TVCG)
       </div>
     </article>
-
-    <article class="pub">
-      <div class="pub-title">
-      LMG: Efficient Streaming of Layered Mesh-Gaussian 3D Scenes
-      </div>
-      <div class="pub-meta">
-        ACM MMSys 2026: Conference on Multimedia Systems
-      </div>
-    </article>
-
-    <article class="pub">
-      <div class="pub-title">
-      SPARC: Proximity-aware Scheduling of AR Mapping and Cloud-based GenAI Upsampling for Efficient Multi-User SLAM
-      </div>
-      <div class="pub-meta">
-        ACM MMSys 2026: Conference on Multimedia Systems
-      </div>
-    </article>
-
-    <article class="pub">
-      <div class="pub-title">
-      ISM: Intelligent Multi-Path Scheduler for Multi-Camera Networked Systems
-      </div>
-      <div class="pub-meta">
-        ACM MMSys 2026: Conference on Multimedia Systems
-      </div>
-    </article>
-
-    <article class="pub">
-      <div class="pub-title">
-      SVD: Spatial Video Dataset
-      </div>
-      <div class="pub-meta">
-        ACM MM 2025: Conference on Multimedia
-      </div>
-    </article>
-
+    
     <article class="pub">
       <div class="pub-title">
         TVMC: Time-Varying Mesh Compression Using Volume-Tracked Reference Meshes
@@ -807,16 +792,6 @@ Using immersive technologies to transform education, training, and skill develop
             <span>ACM Student Workshop at MobiSys: Program Co-Chair</span>
             <span>ACM IMWUT/UbiComp: Reviewer</span>
             <span>ACM MM: Program Committee</span>
-          </div>
-        </div>
-
-        <div class="service-year">
-          <div class="year">2020 &amp; Before</div>
-          <div class="service-items">
-            <span>IEEE Pervasive Computing: Reviewer</span>
-            <span>ACM SIGCOMM: Artifact Evaluation Committee</span>
-            <span>ACM S3 Workshop at MobiCom: Program Co-Chair</span>
-            <span>ACM Transactions on Sensor Networks: Reviewer</span>
           </div>
         </div>
 
